@@ -86,7 +86,7 @@ def iter_odd():
 # iter_power(k), producing powers of k (1, k, k*k, k*k*k, ...).
 def iter_power(k):
     i = 0
-    while True:
+    while i<100:
         yield k**i
         i += 1
 
