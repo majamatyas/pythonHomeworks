@@ -14,7 +14,8 @@ p8=(3,-5)
 L = [p1, p2, p3, p4, p5, p6, p7, p8]
 
 #a
-
+center = lambda p: math.sqrt(p[0]**2 + p[1]**2) < 1
+print(center(p1))
 #b
 def checkIfPositive(p):
     if p[0] > 0 and p[1] > 0:
@@ -24,6 +25,8 @@ def checkIfPositive(p):
     
 print(checkIfPositive(p1))
 
+positiveCheck = lambda p: p[0] > 0 and p[1] > 0
+print(positiveCheck(p1))
 #c
 L.sort(key=lambda p: (p[-1], p[0]))
 print(L)
@@ -87,5 +90,5 @@ def iter_power(k):
         yield k**i
         i += 1
 
-for i in iter_power(2):
-    print(i)
+# for i in iter_power(2):
+#     print(i)
